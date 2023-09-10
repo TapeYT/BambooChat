@@ -51,7 +51,7 @@ function createRoom() {
 
     if (roomName !== "") {
         // Store the room information in the database
-        db.ref("/Chat/folder" + roomName).set({
+        db.ref("/rooms" + roomName).set({
             created_at: new Date().toISOString(),
         });
 
@@ -81,7 +81,7 @@ function joinRoom() {
 // Function to initialize the selected or created room
 function initializeRoom() {
     // Update messagesRef to the specific room
-    messagesRef = db.ref("rooms/" + currentRoom + "/messages");
+    messagesRef = db.ref("/rooms" + currentRoom + "/messages");
 
     // Clear existing messages
     var messagesDiv = document.getElementById("messages");
