@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <title>BammbooChat</title>
     <link rel="icon" type="image/x-icon" href="Untitled.svg">
 </head>
 <body>
-    <div class="loader"></div>
     <img src="Untitled.svg" alt="BammbooChat Logo" style="width:75px;height:75px;">
     <div id="h1">
     <h1>BammbooChat</h1>
@@ -16,20 +16,19 @@
         <div id="roomSelection">
             <label for="roomSelect">Select or create a DM:</label>
             <button onclick="createRoom()">Create DM</button>
-            <input type="text" id="joinRoomInput" placeholder="Enter room code">
+            <input type="text" id="joinRoomInput" placeholder="Enter DM Name">
             <button onclick="joinRoom()">Join DM</button>
         </div>
-        
         <!-- Chat messages -->
         <div id="messages"></div>
         
         <!-- Message input -->
-        <div id="buttons">
+
         <input type="text" id="messageInput" placeholder="Type your message">
-        <button onclick="sendMessage()">Send</button>
-        <button onclick="signOut()">Sign Out</button>
-        <button onclick="signInWithGoogle()">Sign In with Google</button>
-       </div>
+        <button id="btn1" onclick="sendMessage()">Send</button>
+        <button id="btn2" onclick="signOut()">Sign Out</button>
+        <button id="btn3" onclick="signInWithGoogle()">Sign In with Google</button>
+
     </div>
 
     <!-- Load Firebase components -->
