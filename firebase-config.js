@@ -4,7 +4,7 @@ const firebaseConfig = {
     authDomain: "baboochat2.firebaseapp.com",
     databaseURL: "https://baboochat2-default-rtdb.firebaseio.com",
     projectId: "baboochat2",
-    storageBucket: "baboochat2.appspot.com",
+    storageBucket: "gs://baboochat2.appspot.com/",
     messagingSenderId: "641194041752",
     appId: "1:641194041752:web:7699a3e5369066628a8bed",
     measurementId: "G-1TZ5810DP6"
