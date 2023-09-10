@@ -1,13 +1,13 @@
 // Replace these placeholders with your actual Firebase project configuration
 const firebaseConfig = {
     apiKey: "AIzaSyD3T6-J7fcIysgRRNC6PU1h1AGvmBhe12s",
-    authDomain: "momandmechat-196f2.firebaseapp.com",
-    databaseURL: "https://momandmechat-196f2-default-rtdb.firebaseio.com",
+    authDomain: "baboochat2.firebaseapp.com",
+    databaseURL: "https://baboochat2-default-rtdb.firebaseio.com",
     projectId: "baboochat2",
-    storageBucket: "gs://baboochat2.appspot.com",
+    storageBucket: "baboochat2.appspot.com",
     messagingSenderId: "641194041752",
-    appId: "1:634171816302:web:f84da0c9c9b9aa4a33697f",
-    measurementId: "G-YBRNK2TYH7"
+    appId: "1:641194041752:web:7699a3e5369066628a8bed",
+    measurementId: "G-1TZ5810DP6"
 };
 
 // Initialize Firebase with the configuration
