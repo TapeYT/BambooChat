@@ -1,8 +1,8 @@
-// Replace these placeholders with your actual Firebase project configuration
+// Firebase project configuration
 const firebaseConfig = {
     apiKey: "AIzaSyD3T6-J7fcIysgRRNC6PU1h1AGvmBhe12s",
     authDomain: "baboochat2.firebaseapp.com",
-    databaseURL: "https://baboochat2-default-rtdb.firebaseio.com",
+    databaseURL: "gs://baboochat2.appspot.com",
     projectId: "baboochat2",
     storageBucket: "baboochat2.appspot.com",
     messagingSenderId: "641194041752",
