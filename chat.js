@@ -51,7 +51,7 @@ function createRoom() {
 
     if (roomName !== "") {
         // Store the room information in the database
-        db.ref("rooms/" + roomName).set({
+        db.ref("/Chat/folder" + roomName).set({
             created_at: new Date().toISOString(),
         });
 
