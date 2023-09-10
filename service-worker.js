@@ -5,7 +5,7 @@ self.addEventListener('notificationclick', function(event) {
     event.waitUntil(
         clients.matchAll({ type: 'window' }).then((clientList) => {
             for (let client of clientList) {
-                if (client.url === '/' && 'focus' in client) {
+                if (client.url === 'https"//www.idontxl.tk' && 'focus' in client) {
                     return client.focus();
                 }
             }

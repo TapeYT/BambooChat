@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <title>BammbooChat</title>
+    <link rel="icon" type="image/x-icon" href="Untitled.svg">
 </head>
 <body>
+    <div class="loader"></div>
+    <img src="Untitled.svg" alt="BammbooChat Logo" style="width:75px;height:75px;">
+    <div id="h1">
+    <h1>BammbooChat</h1>
+</div>
     <div id="chat">
         <!-- Room selection -->
         <div id="roomSelection">
@@ -17,10 +24,12 @@
         <div id="messages"></div>
         
         <!-- Message input -->
+        <div id="buttons">
         <input type="text" id="messageInput" placeholder="Type your message">
         <button onclick="sendMessage()">Send</button>
         <button onclick="signOut()">Sign Out</button>
         <button onclick="signInWithGoogle()">Sign In with Google</button>
+       </div>
     </div>
 
     <!-- Load Firebase components -->
