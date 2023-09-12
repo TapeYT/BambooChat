@@ -14,7 +14,7 @@ function sendMessage() {
         if (user) {
             var message = {
                 text: messageText,
-                sender: user.displayName, // Use user's display name
+                sender: user.email, // Use user's display name
                 timestamp: new Date().getTime(),
             };
 
