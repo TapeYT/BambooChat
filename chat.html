@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main_index.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>BammbooChat</title>
+    <link rel="icon" type="image/x-icon" href="Untitled.svg">
+</head>
+<body>
+    <div class="marvellous-container">
+        <div class="header">
+          <div class="header-link">
+            <div class="href">
+            <a href="index.html">Home</a>
+            <a class="active" href="chat.html">DM</a>
+           </div>
+          </div>
+    <img src="Untitled.svg" alt="BammbooChat Logo" style="width:75px;height:75px;">
+    <div id="h1">
+    <h1>BammbooDM</h1>
+    <p>(You Must Be Signed In To Do Anything)</p>
+</div>
+    <div id="chat">
+        <!-- Room selection -->
+        <div id="roomSelection">
+            <label for="roomSelect">Select or create a DM:</label>
+            <button onclick="createRoom()">Create DM</button>
+            <input type="text" id="joinRoomInput" placeholder="Enter DM Name">
+            <button onclick="joinRoom()">Join DM</button>
+        </div>
+        <!-- Chat messages -->
+        <div id="messages"></div>
+        
+        <!-- Message input -->
+
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button id="btn1" onclick="sendMessage()">Send</button>
+        <button id="btn2" onclick="signOut()">Sign Out</button>
+        <button id="btn3" onclick="signInWithGoogle()">Sign In with Google</button>
+
+    </div>
+
+    <!-- Load Firebase components -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

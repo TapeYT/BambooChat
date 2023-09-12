@@ -1,0 +1,32 @@
+.marvellous-container {
+    position: relative;
+    z-index: 2;
+    padding: 104px 0 24px 0;
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .header-link {
+    margin-bottom: 1rem;
+  }
+  
+  .header-link a {
+    display: inline-block;
+    text-decoration: none;
+    background: rgba(124, 121, 121, 0.8);
+    border: 1px solid #7f797f;
+    border-radius: 8px;
+    padding: 0.2rem 1rem;
+  }
+  
+  .header-link a:hover {
+    background: var(--primary-color);
+  }
+  
+  .header-link .active {
+    background: var(--primary-color);
+  }
+  .header {
+    margin-bottom: 104px;
+  }
+  
